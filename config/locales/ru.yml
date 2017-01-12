@@ -1,0 +1,8 @@
+ru:
+  activemodel:
+    models:
+      override: Форсированный курс
+    attributes:
+      override:
+        value: Значение курса рубля
+        active_until: Время, до которого форсирование актуально
