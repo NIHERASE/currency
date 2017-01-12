@@ -4,5 +4,4 @@ $(document).on 'turbolinks:load', ->
     locale: 'ru',
     inline: true,
     sideBySide: true,
-    defaultDate: moment().add(5, 'minutes')
     minDate: new Date()

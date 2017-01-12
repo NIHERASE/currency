@@ -1,6 +1,7 @@
 class AdminController < ApplicationController
   def index
-    @override = OverrideRepository.get || Override.new
+    @override = OverrideRepository.get
+    @override ||= Override.new(active_until: DateTime.now + 5.minutes)
   end
 
   def create
