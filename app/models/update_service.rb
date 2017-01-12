@@ -12,9 +12,9 @@ class UpdateService
     def update
       return unless OverrideRepository.get.nil?
 
-      value = JSON.parse(Typhoeus.get('http://www.rbc.ru/ajax/indicators').body)['currency'].find { |h| h['name'] == 'USD' && h['subname'] == 'Бирж.' }['value1']
-      CurrencyChannel.broadcast(value)
+      value = RemoteCurrencyProviders.get_currency
       CurrencyRepository.save(value)
+      CurrencyChannel.broadcast(value)
     end
   end
 end
