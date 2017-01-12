@@ -1,8 +1,23 @@
 class AdminController < ApplicationController
   def index
-    CurrencyChannel.broadcast_to(
-      'broadcast',
-      rand(50..100)
-    )
+    @override = OverrideRepository.get || Override.new
+  end
+
+  def create
+    @override = Override.new(override_params)
+    if @override.valid?
+      OverrideService.set(@override)
+      flash[:notice] = 'Форсирование успешно установлено'
+      redirect_to admin_path
+    else
+      flash.now[:error] = @override.errors.full_messages.join(', ')
+      render :index
+    end
+  end
+
+  private
+
+  def override_params
+    params.require('override').permit('value', 'active_until')
   end
 end

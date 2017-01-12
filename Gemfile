@@ -35,6 +35,18 @@ gem 'redis', '~> 3.0'
 # Bootstrap 3
 gem 'bootstrap-sass', '~> 3.3.6'
 
+# Datetimepicker
+gem 'momentjs-rails', '>= 2.9.0'
+gem 'bootstrap3-datetimepicker-rails'
+
+gem 'typhoeus'
+
+gem 'rufus-scheduler'
+
+gem 'rails-i18n'
+
+gem 'pry-rails'
+
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 

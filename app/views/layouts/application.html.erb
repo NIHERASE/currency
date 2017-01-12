@@ -11,6 +11,7 @@
   <body>
     <div class="container">
       <%= render 'application/navbar' %>
+      <%= render 'application/flash_messages', flash: flash %> 
 
       <%= yield %>
     </div>
