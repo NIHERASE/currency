@@ -30,7 +30,7 @@ class OverrideRepository
     end
 
     def ttl_is_until(ttl)
-      Time.at(Time.now.to_i + ttl).to_datetime
+      DateTime.now + ttl.seconds
     end
   end
 end
