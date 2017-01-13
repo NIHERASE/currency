@@ -65,6 +65,12 @@ RSpec.describe OverrideRepository do
         expect(described_class.get).to be_nil
       end
 
+      it 'returns nil' do
+        expect(
+          described_class.save(override_with_passed_active_until)
+        ).to be_nil
+      end
+
       it 'deletes current override' do
         described_class.save(override)
         described_class.save(override_with_passed_active_until)
