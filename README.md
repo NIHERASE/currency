@@ -1,5 +1,7 @@
 # Currency
 
+[![Build Status](https://travis-ci.org/NIHERASE/currency.svg?branch=master)](https://travis-ci.org/NIHERASE/currency)
+
 ## Зависимости
 
 * Redis, доступный по `REDIS_URL` (указать в `.env`, значние по умолчанию `redis://0.0.0.0:6379`)
