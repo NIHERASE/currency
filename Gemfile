@@ -12,6 +12,7 @@ gem 'redis', '~> 3.0'
 gem 'typhoeus'
 gem 'rufus-scheduler'
 gem 'rails-i18n'
+gem 'dotenv-rails'
 
 gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'

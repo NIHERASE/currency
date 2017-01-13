@@ -6,6 +6,8 @@ class UpdateService
         update
       end
 
+      Rails.logger.debug('Update service running')
+
       scheduler.join
     end
 
