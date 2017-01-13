@@ -23,6 +23,7 @@ gem 'momentjs-rails', '>= 2.9.0'
 gem 'bootstrap3-datetimepicker-rails'
 
 group :development, :test do
+  gem 'rails-controller-testing'
   gem 'rspec-rails'
   gem 'pry-rails'
   gem 'byebug', platform: :mri
