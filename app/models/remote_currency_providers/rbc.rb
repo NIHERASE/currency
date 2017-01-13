@@ -12,6 +12,8 @@ module RemoteCurrencyProviders
         nil
       end
 
+      private
+
       def get_hash
         JSON.parse(get_data)
       end

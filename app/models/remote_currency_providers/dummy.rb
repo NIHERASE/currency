@@ -1,7 +1,9 @@
 module RemoteCurrencyProviders
   class Dummy
+    VALUE = '__'
+
     def self.get_currency
-      '__'
+      VALUE
     end
   end
 end
