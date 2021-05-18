@@ -7,7 +7,7 @@ end
 
 gem 'rails', '~> 5.0.1'
 gem 'activemodel'
-gem 'puma', '~> 3.0'
+gem 'puma', '~> 4.3'
 gem 'redis', '~> 3.0'
 gem 'typhoeus'
 gem 'rufus-scheduler'
